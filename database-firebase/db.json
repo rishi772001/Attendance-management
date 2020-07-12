@@ -1,0 +1,61 @@
+{
+  "faculty": {
+    "dbms": {
+      "attendance": {
+        "2020": {
+          "7": {
+            "9": {
+              "181001074": "present"
+            },
+            "10": {
+              "181001074": "present"
+            },
+            "12": {
+              "181001074": "present"
+            }
+          }
+        }
+      },
+      "code": "0",
+      "department": "CS",
+      "password": "dbms123"
+    },
+    "oops": {
+      "code": "0",
+      "department": "CS",
+      "password": "oops123"
+    },
+    "os": {
+      "code": "0",
+      "department": "CS",
+      "password": "os123"
+    }
+  },
+  "student": {
+    "181001074": {
+      "email": "rishi772001@gmail.com",
+      "name": "rishi",
+      "password": "rishi"
+    },
+    "181001075": {
+      "email": "sabari@gmail.com",
+      "name": "sabari",
+      "password": "sabari"
+    },
+    "181001099": {
+      "email": "srivathsan@gmail.com",
+      "name": "srivathsan",
+      "password": "srivz"
+    },
+    "181001101": {
+      "email": "sudharsan.dspm@gmail.com",
+      "name": "sudharsan",
+      "password": "susaa"
+    },
+    "181001105": {
+      "email": "swathy@gmail.com",
+      "name": "swathy",
+      "password": "swathy"
+    }
+  }
+}
