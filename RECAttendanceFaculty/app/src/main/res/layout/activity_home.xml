@@ -1,108 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homeActivity">
+    tools:context=".homeActivity"
+    android:orientation="vertical">
+
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="295dp"
-        android:layout_marginLeft="295dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
         android:background="#09A1F3"
         android:text="Log Out"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp"
+        android:paddingHorizontal="10dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="right"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/btngenerate"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:paddingHorizontal="10dp"
+        android:background="#14B422"
+        android:text="Generate Code" />
+    <Space
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:width="500px"
-        android:background="#14B422"
-        android:text="Generate Code"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24000001" />
+        android:layout_weight="0.5"/>
 
     <TextView
         android:id="@+id/txtcode"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
         android:width="500px"
         android:gravity="center"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btngenerate" />
+        android:textSize="35sp" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"/>
 
     <Button
         android:id="@+id/btnstop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
-        android:layout_marginLeft="157dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginRight="166dp"
-        android:layout_marginBottom="58dp"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="20sp"
         android:background="#F8FF0000"
         android:text="Stop"
-        android:textColor="#FDFDFD"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColor="#FDFDFD" />
+
 
     <TextView
         android:id="@+id/txttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginLeft="176dp"
-        android:layout_marginTop="63dp"
-        android:gravity="center"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
-        android:layout_marginBottom="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnstop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtcode" />
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:gravity="center" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="185dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="157dp"
-        android:layout_marginLeft="157dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginRight="166dp"
-        android:layout_marginBottom="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
         android:background="#00BCD4"
+        android:layout_margin="60dp"
         android:text="View Attendance"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+</LinearLayout>
